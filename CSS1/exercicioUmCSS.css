@@ -1,0 +1,7 @@
+p {
+    border: 5px solid black;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color:#aaaa;
+    padding: 2px 5em 2px 5em; 
+}
