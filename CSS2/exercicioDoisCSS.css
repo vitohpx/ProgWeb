@@ -1,0 +1,19 @@
+body{
+    background-image: url(nightcity.jpg);
+    background-repeat: no-repeat;
+    background-size: 85% 1500px;
+    background-position: center; 
+    background-color:yellow;
+}
+
+div {
+    margin-top: 5%;
+    margin-left: 15%;
+    padding: 2em; 
+    width: 400px;
+    height: 250px;
+    border: 12px solid black;
+    border-radius: 12px;
+    background-color:yellow;
+    align-content: center;
+}
