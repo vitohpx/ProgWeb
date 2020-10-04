@@ -15,5 +15,7 @@ div {
     border: 12px solid black;
     border-radius: 12px;
     background-color:yellow;
+    font-size: 18px;
+    opacity: 0.7; 
     align-content: center;
 }
