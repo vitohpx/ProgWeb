@@ -1,0 +1,20 @@
+div{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+table{
+    border:2px solid black;
+    margin:1%
+}
+
+#cabecalho{
+    font-weight:bold;
+}
+
+td{
+    border:1px solid black;
+    padding:2%;
+    text-align:center;
+}
+
