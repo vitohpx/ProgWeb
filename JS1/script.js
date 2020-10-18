@@ -31,6 +31,7 @@ for (let i = 1; i <= 10; i++) {
   }
   
   div.appendChild(tabela);
-  corpo.appendChild(div);
-
+  
 }
+
+corpo.appendChild(div);
