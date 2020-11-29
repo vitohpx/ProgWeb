@@ -11,4 +11,15 @@ function sobre(req,res){
     });
 }
 
-module.exports = {index,sobre}
+function game(req,res){
+    res.render("main/game",{   
+    });
+}
+
+function ui(req,res){
+    res.render("main/ui",{
+
+    });
+}
+
+module.exports = {index,sobre,game,ui};
