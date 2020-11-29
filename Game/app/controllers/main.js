@@ -1,5 +1,7 @@
 function index(req,res){
-    res.send("Home page");
+    res.render("main/index",{
+        titulo: "Vigilantes da Floresta"    
+    });
 }
 
 
