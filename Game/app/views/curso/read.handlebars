@@ -1,5 +1,10 @@
 <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-    <div class="card-header">{{curso.nome}}</div>
+    <div class="card-header">{{curso.nome}}
+        <div>
+            <a href="/curso/update/{{curso.id}}" style="color: white;"><i class="fas fa-edit"></i></a>
+            <a href="/curso/remove/{{curso.id}}" style="color: white;"><i class="fas fa-trash-alt"></i></a>
+        </div>
+    </div>
     <div class="card-body">
         <div><b>Sigla: </b> {{curso.sigla}}</div>
         <div><b>Nome:</b> {{curso.nome}}</div>

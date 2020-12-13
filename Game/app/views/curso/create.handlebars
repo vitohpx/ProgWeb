@@ -1,15 +1,20 @@
-<h1>Adicionar Curso</h1>
+<h1>Adicionar Curso <a href="/curso/" class="btn btn-primary">Voltar</a></h1>
 
 <form action="/curso/create" method="post"> 
+    <input type="hidden" name="id" value="">
+
     <div class="form-group">
     <label for="sigla">Sigla do curso</label>
     <input type="text" class="form-control" id="sigla" name="sigla" placeholder="Informe a sigla do curso">
     <small class="form-text text-muted">Em caso de dúvidas, consulte o site da UFAM.</small>
+    <div class="invalid">{{printError errors "sigla"}}</div>
+
 </div>
 
     <div class="form-group">
         <label for="nome">Nome do curso</label>
         <input type="text" class="form-control" id="nome" name="nome" placeholder="Informe o nome do curso">
+        <div class="invalid">{{printError errors "nome"}}</div>
     </div>
 
     <div class="form-group">
@@ -21,15 +26,15 @@
         <legend>Área da Ciência</legend>
         <div class="form-check">
             <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="area" id="area" value="1" checked="">
+                <input type="radio" class="form-check-input" name="areaId" id="areaId" value="1" checked="">
                 Ciências Exatas. Ex: Computação, Matemática, Estatística, etc.
             </label><br/>
             <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="area" id="area" value="2" checked="">
+                <input type="radio" class="form-check-input" name="areaId" id="areaId" value="2" checked="">
                 Ciências Humanas. Ex: Letras, História, Psicologia, etc.
             </label><br/>
             <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="area" id="area" value="3" checked="">
+                <input type="radio" class="form-check-input" name="areaId" id="areaId" value="3" checked="">
                 Ciências Biológicas. Ex: Medicina, Odontologia, Farmácia, etc.
             </label>
         </div>

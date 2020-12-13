@@ -10,6 +10,12 @@ form [type="submit"]{
     }
 }
 
+.invalid{
+    display: block;
+    font-size: 13px;
+    color: red;
+}
+
 .reserva {
     background-image: url('../img/reserva.png');
     background-size: cover;

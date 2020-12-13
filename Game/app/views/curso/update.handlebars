@@ -1,0 +1,43 @@
+<h1>Atualizar Curso</h1>
+
+<form action="/curso/update/{{curso.id}}" method="post"> 
+<input type="hidden" name="id" value="{{curso.id}}">
+    <div class="form-group">
+        <label for="sigla">Sigla do curso</label>
+        <input type="text" class="form-control" id="sigla" name="sigla" value="{{curso.sigla}}" placeholder="Informe a sigla do curso">
+        <small class="form-text text-muted">Em caso de dúvidas, consulte o site da UFAM.</small>
+        <div class="invalid">{{printError errors "sigla"}}</div>
+    </div>
+
+    <div class="form-group">
+        <label for="nome">Nome do curso</label>
+        <input type="text" class="form-control" id="nome" name="nome" value="{{curso.nome}}" placeholder="Informe o nome do curso">
+        <div class="invalid">{{printError errors "nome"}}</div>
+    </div>
+
+    <div class="form-group">
+        <label for="descricao">Descrição do curso</label>
+        <textarea class="form-control" name="descricao" id="descricao" rows="3">{{curso.descricao}}</textarea>
+    </div>
+
+    <fieldset class="form-group">
+        <legend>Área da Ciência</legend>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="areaId" id="areaId" value="1" {{checked curso.areaId 1}}>
+                Ciências Exatas. Ex: Computação, Matemática, Estatística, etc.
+            </label><br/>
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="areaId" id="areaId" value="2" {{checked curso.areaId 2}}>
+                Ciências Humanas. Ex: Letras, História, Psicologia, etc.
+            </label><br/>
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="areaId" id="areaId" value="3" {{checked curso.areaId 3}}>
+                Ciências Biológicas. Ex: Medicina, Odontologia, Farmácia, etc.
+            </label>
+        </div>
+    </fieldset>
+
+    <button type="submit" class="btn btn-primary">Atualizar Curso</button>
+</form>
+

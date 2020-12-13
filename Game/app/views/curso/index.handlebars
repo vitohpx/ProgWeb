@@ -2,7 +2,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="page-header">
-              <h1 id="tables">Cursos</h1>
+              <h1 id="tables">Cursos <a href="/curso/create" class="btn btn-primary">Adicionar</a></h1>
             </div>
 
             <div class="bs-component">
@@ -21,8 +21,8 @@
                         <td>{{nome}}</td>
                         <td class="options">
                             <a href="/curso/{{id}}"><i class="fas fa-eye"></i></a>
-                            <a href="/curso/update{{id}}"><i class="fas fa-edit"></i></a>
-                            <a href="/curso/remove{{id}}"><i class="fas fa-trash-alt"></i></a>
+                            <a href="/curso/update/{{id}}"><i class="fas fa-edit"></i></a>
+                            <a href="/curso/remove/{{id}}"><i class="fas fa-trash-alt"></i></a>
                         </td>
                     </tr>
                     {{/each}}
