@@ -9,3 +9,55 @@ form [type="submit"]{
         padding: 2px;
     }
 }
+
+.reserva {
+    background-image: url('../img/reserva.png');
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+  
+.foco-incendio {
+    background-image: url('../img/foco.gif');
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+}
+  
+.caveiras{
+    background-image: url('../img/caveira.gif');
+    background-size: cover;
+    position: absolute;
+    z-index: 3;
+}
+  
+.vidas {
+    background-image: url('../img/arvore.png');
+    width: 100px;
+    height: 54px;
+    margin-left: 5%;
+    display: inline-block;
+}
+  
+#pontuacao{
+    position: static;
+    display: inline-block;
+    right: 0px;
+    top: 0px;
+    font-size: 40px; 
+}
+
+.placar{
+    justify-content: space-between;
+    display: inline-block;
+}
+  
+.devasta{
+    transform: scale(1.5);
+    background-size: cover;
+    position: absolute;
+  
+}
+  
+  
+  
